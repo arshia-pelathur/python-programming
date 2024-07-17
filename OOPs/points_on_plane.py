@@ -18,9 +18,12 @@ class Point:
         
     def distance_point(self,point):
         return self.distance_from_xy(point.getx(),point.gety())
-    
+def main():
+    p1 = Point(0,0)
+    p2 = Point(2,2)
+    print(p1.distance_from_xy(2,0))
+    print(p1.distance_point(p2))
 
-p1 = Point(0,0)
-p2 = Point(2,2)
-print(p1.distance_from_xy(2,0))
-print(p1.distance_point(p2))
+if __name__ == '__main__':
+    main()
+
